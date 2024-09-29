@@ -8,7 +8,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <style>
 
-         .toplayout { 
+        .fulllayout { 
         position: absolute;
         top: 0px;
         left: 0px;
@@ -16,12 +16,31 @@
         bottom: 0px;
         background: #edeef0; /* Цвет фона */
 	}
+	.toplayout{
+	position: absolute;
+        top: 0px;
+        left: 0px;
+ 	right:0px;
+        height: 40px;
+        background: #507299 /* Цвет фона */
+	}
+	img{
+	position: absolute;
+	top: 10px;
+	left: 160px;
+	width: 60px;
+	height: 25px;
+	}
+	
 </style>
 </head>
 <body>
    <main>
-  	<div class="toplayout">
-</div>
+  	<div class="fulllayout">
+	<div class="toplayout">
+	<img src="logo.png">
+	</div>
+	</div>
    </main>
 </body>
 </html>
