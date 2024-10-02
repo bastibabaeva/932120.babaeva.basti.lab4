@@ -8,14 +8,6 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <style>
 
-        .fulllayout { 
-        position: absolute;
-        top: 0px;
-        left: 0px;
- 	right:0px;
-        bottom: 0px;
-        background: #edeef0; /* Цвет фона */
-	}
 	.toplayout{
 	position: absolute;
         top: 0px;
@@ -24,7 +16,7 @@
         height: 40px;
         background: #507299 /* Цвет фона */
 	}
-	img{
+	.img1{
 	position: absolute;
 	top: 10px;
 	left: 200px;
@@ -33,11 +25,12 @@
 	}
 	.list{
 	position: absolute;
+	flex: 30% 1 0;	
         padding: 5px;
 	top: 40px;
-	left: 360px;
+	margin-left: 360px;
         bottom: 0px;
-	width: 220px;
+	max-width: 220px;
 	}
 	.ul{
 	font-size: 100%;
@@ -51,20 +44,43 @@
 	margin-bottom: 1em;
 	}
 	
-	.block1{
-	position: absolute;
-	top: 10px;
-	margin-left: 250px;
-	width: 350px;
-	height:350px;
-	padding: 15px;
-	border-radius: 10px;
-	background-color: white;
+	.block{
+	text-align: justify;
 	font-family: Arial;
 	font-size: 85%;
-	text-align: justify;
+	padding: 15px;
+	}
+
+	.textblock{
+	position:absolute;
+	flex: 30% 1 0;	
+	width: 350px;
+  	height: 350px;
+	margin-left: 600px;
+	top: 50px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid  #d0d0d0;
 	}
 	
+	.imageblock{
+	position:absolute;
+	flex: 30% 1 0;	
+	width: 350px;
+  	height: 350px;
+	margin-left: 600px;
+	top: 425px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid  #d0d0d0;
+	}
+	.img2{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 310px;
+	height: 260px;
+	}
 	.fitline{
 	width: 300px;
 	height: 20px;
@@ -72,14 +88,21 @@
 	color: green;
 	}
 
-	
+	@media (max-width: 800px) {
+	.list, img1{
+	margin-left: 0px;
+	}
+	.textblock, .imageblock{
+	margin-left: 230px;
+	}
+
 </style>
 </head>
-<body>
+<body bgcolor="#edeef0">
    <main>
   	<div class="fulllayout">
 	   <div class="toplayout">
-	     <img src="logo.png">
+	     <img class="img1" src="logo.png">
 		<div class="list">
 		<ul class="ul">
 		<li style="margin-bottom: 1em;">Main page<li>
@@ -88,11 +111,24 @@
 		<li style="margin-bottom: 1em;">More pages to the god of pages</li>
 		<li style="margin-bottom: 1em;">The last page</li>
 		</ul>
-		<div class="block1">
+	</div>
+	       <div class="textblock">
+		<div class="block">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
-		
+		</div>
+		<div class="imageblock">
+		<img class="img2"src="cat.png">
+		</div>
+
+		<div class="textblock" >
+		<div class="block">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		</div>
+
 	   </div>
 	</div>
    </main>
