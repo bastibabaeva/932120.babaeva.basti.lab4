@@ -44,7 +44,7 @@
 	}
 
 	li:hover{
-	background:#d0d0d0;
+	background:#e1e5eb;
 	margin-bottom: 1em;
 	padding: 5px;
 	}
@@ -59,7 +59,7 @@
 	.textblock1{
 	position:absolute;
 	flex: 30% 1 0;	
-	width: 350px;
+	width: 380px;
   	height: 350px;
 	margin-left: 600px;
 	top: 50px;
@@ -71,7 +71,7 @@
 	.textblock2{
 	position:absolute;
 	flex: 30% 1 0;	
-	width: 350px;
+	width: 380px;
   	height: 350px;
 	margin-left: 600px;
 	top: 790px;
@@ -83,7 +83,7 @@
 	.textblock3{
 	position:absolute;
 	flex: 30% 1 0;	
-	width: 350px;
+	width: 380px;
   	height: 350px;
 	margin-left: 600px;
 	top: 1160px;
@@ -95,7 +95,7 @@
 	.textblock4{
 	position:absolute;
 	flex: 30% 1 0;	
-	width: 350px;
+	width: 380px;
   	height: 350px;
 	margin-left: 600px;
 	top: 1530px;
@@ -105,9 +105,8 @@
 	}
 	
 	.imageblock{
-	position:absolute;
-	flex: 30% 1 0;	
-	width: 350px;
+	position:absolute;	
+	width: 380px;
   	height: 350px;
 	margin-left: 600px;
 	top: 420px;
@@ -117,21 +116,35 @@
 	}
 
 	.img2{
-	position: absolute;
-	top: 15px;
-	left: 20px;
-	width: 310px;
-	height: 260px;
+	flex: 1 1 auto;
+        display: flex;
+        margin: 0 auto;
+        padding: 0px;
 	}
 
-	.fitline{
-	display: flex;
-	width: 300px;
-	height: 20px;
-	left: 25px;
-	color: green;
+	hr{
+	background: #d0d0d0;
+	border: 1px solid #d0d0d0;
+	height: 0.5px;
+	border-radius: 2px;
 	}
 	
+	.block_options
+	{
+   	 display: flex;
+   	 justify-content: space-between;
+	}
+
+	.text_button
+	{
+         background: none;
+  	 border: none;
+   	 text-decoration: none;
+  	 color:#507299;
+   	 padding: 0px;
+	font-family: Arial;
+	}
+
 	.infblock1{	
 	top: 50px;
 	position: fixed;
@@ -170,8 +183,8 @@
 
 	.footertext{
 	padding: 4px;
-	color: #d0d0d0;
-	font-size: 100%;
+	color: #2e5473;
+	font-size: 90%;
 	font-family: Arial;
 	text-align: center;
 	}
@@ -205,28 +218,43 @@
 		    </ul>
 	        </div>
 	   </div>
-	        <div class="textblock1">
-		   <div class="block">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		  </div>
-		</div>
+	       
 
 		<div class="imageblock">
-		     <img class="img2"src="cat.png">
+	<div class="block">
+		     <div class="img2"> 
+			    <img src="cat.png" alt="puss in the boots" id="logo" width=350px height=290px>
+			</div>
+		        
+			  <hr>
+			  <div class="block_options">
+                             <button class="text_button">Like</button>
+                             <button class="text_button">Comment</button>
+                          </div>
+		      </div>
 		</div>
-
-		<div class="textblock1" >
+		
+		<div class="textblock1" >			
 		  <div class="block">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			 </p>
+			<hr>
+			<div class="block_options">
+                        <button class="text_button">Like</button>
+                        <button class="text_button">Comment</button>
+                    </div>
 		  </div>
 		</div>
 
-		<div class="textblock2">
+		<div class="textblock2"> 
 		   <div class="block">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
+			<hr>
+			<div class="block_options">
+                        <button class="text_button">Like</button>
+                        <button class="text_button">Comment</button>
+                    </div>
 		   </div>
 		</div>
 
@@ -234,6 +262,11 @@
 		   <div class="block">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
+			<hr>
+			<div class="block_options">
+                        <button class="text_button">Like</button>
+                        <button class="text_button">Comment</button>
+                    </div>
 		   </div>
 		</div>
 
@@ -241,6 +274,11 @@
 		   <div class="block">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
+			<hr>
+			<div class="block_options">
+                        <button class="text_button">Like</button>
+                        <button class="text_button">Comment</button>
+                    </div>
 		   </div>
 		</div>
 
