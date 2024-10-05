@@ -40,11 +40,13 @@
 	color: #507299;
 	font-family: Arial;
 	list-style-type: none;
+	flex: 30% 1 0;
 	}
 
 	li:hover{
 	background:#d0d0d0;
 	margin-bottom: 1em;
+	padding: 5px;
 	}
 	
 	.block{
@@ -113,6 +115,7 @@
 	border-radius: 10px;
 	border: 1px solid  #d0d0d0;
 	}
+
 	.img2{
 	position: absolute;
 	top: 15px;
@@ -120,6 +123,7 @@
 	width: 310px;
 	height: 260px;
 	}
+
 	.fitline{
 	display: flex;
 	width: 300px;
@@ -128,6 +132,32 @@
 	color: green;
 	}
 	
+	.infblock1{	
+	top: 50px;
+	position: fixed;
+	width: 140px;
+  	height: 150px;
+	right: 300px;
+	padding: 10px;
+	font-family: Arial;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid  #d0d0d0;
+	}
+	
+	.infblock2{
+	top: 240px;
+	position: fixed;
+	width: 140px;
+  	height: 170px;
+	right: 300px;
+	padding: 10px;
+	font-family: Arial;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid  #d0d0d0;
+	}
+
 	.footerlayout{
 	position: absolute;
 	left: 0px;
@@ -146,13 +176,26 @@
 	text-align: center;
 	}
 
+	.spanf{
+	
+	background-color: #edeef0; 
+        color: black;
+	width: 140px;
+	
+	}
+
 	@media (max-width: 800px) {
-	.list, img1{
+	 img1{
 	margin-left: 0px;
 	}
 	.textblock1, .textblock2, .textblock3, .textblock4, .imageblock{
-	margin-left: 230px;
+	margin-left: 230px; 
+	.list     {
+                   flex: auto 0 0;
+                    margin: 20px 0px 20px 0px;
+                    padding: 0px;
 	}
+
 
 </style>
 </head>
@@ -209,7 +252,20 @@
 			</p>
 		   </div>
 		</div>
+
+	
+	  <div class="infblock1">
 		
+		<p><div class="spanf">Very important information!</div></p>
+		<p><div class="spanf">Many, many very usefull and important information!</div></p>
+	   </div>
+	
+
+	   <div class="infblock2">
+		<p><b>Some new header!</b></p>
+		<p><div class="spanf">For example, some new and usefull fixed text. And many another text and more text...</div></p>
+	   </div>
+	
 
 	<footer class="footerlayout">
 	     <div class="footertext">
