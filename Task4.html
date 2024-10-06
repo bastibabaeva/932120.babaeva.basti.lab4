@@ -20,27 +20,26 @@
 	.img1{
 	position: absolute;
 	top: 10px;
-	left: 200px;
+	margin-left: 200px;
 	width: 60px;
 	height: 25px;
 	}
 
-	.list{
-	position: absolute;
-	flex: 30% 1 0;	
+	.list{	
         padding: 5px;
-	top: 40px;
-	margin-left: 360px;
+	margin-top: 40px;
+	margin-left: 350px;
         bottom: 0px;
 	max-width: 220px;
 	}
 
 	.ul{
+	
 	font-size: 100%;
 	color: #507299;
 	font-family: Arial;
 	list-style-type: none;
-	flex: 30% 1 0;
+	
 	}
 
 	li:hover{
@@ -58,7 +57,7 @@
 
 	.textblock1{
 	position:absolute;
-	flex: 30% 1 0;	
+	display: flex;	
 	width: 380px;
   	height: 350px;
 	margin-left: 600px;
@@ -69,8 +68,7 @@
 	}
 
 	.textblock2{
-	position:absolute;
-	flex: 30% 1 0;	
+	position:absolute;	
 	width: 380px;
   	height: 350px;
 	margin-left: 600px;
@@ -82,7 +80,6 @@
 
 	.textblock3{
 	position:absolute;
-	flex: 30% 1 0;	
 	width: 380px;
   	height: 350px;
 	margin-left: 600px;
@@ -94,7 +91,7 @@
 
 	.textblock4{
 	position:absolute;
-	flex: 30% 1 0;	
+	dispaly: flex;
 	width: 380px;
   	height: 350px;
 	margin-left: 600px;
@@ -105,7 +102,8 @@
 	}
 	
 	.imageblock{
-	position:absolute;	
+	position:absolute;
+	display: flex;	
 	width: 380px;
   	height: 350px;
 	margin-left: 600px;
@@ -145,13 +143,17 @@
 	font-family: Arial;
 	}
 
-	.infblock1{	
+	.infblock1{
+	display: flex;
+	flex-direction: column;	
+	gap: 10px;
 	top: 50px;
 	position: fixed;
 	width: 140px;
-  	height: 150px;
-	right: 300px;
+  	height: 140px;
+	right: 8%;
 	padding: 10px;
+	padding-top: 30px;
 	font-family: Arial;
 	background: white;
 	border-radius: 5px;
@@ -159,12 +161,16 @@
 	}
 	
 	.infblock2{
+	display: flex;
+	flex-direction: column;	
+	gap:10px;
 	top: 240px;
 	position: fixed;
 	width: 140px;
   	height: 170px;
-	right: 300px;
+	right: 8%;
 	padding: 10px;
+	padding-top: 20px;
 	font-family: Arial;
 	background: white;
 	border-radius: 5px;
@@ -175,7 +181,7 @@
 	position: absolute;
 	left: 0px;
  	right:0px;
-	bottom: 0px;
+	margin-bottom: 0px;
 	top: 1900px;
 	height: 30px;
 	background: white;
@@ -192,7 +198,8 @@
 	.spanf{	
 	background-color: #edeef0; 
         color: black;
-	width: 140px;	
+	width: 140px;
+		
 	}
 
 	p::selection{
@@ -200,7 +207,46 @@
 	color: green;
 	}
 	
+@media (max-width: 1200px)
+{
+    .infblock1, .infblock2
+    {
+         display: none;
+	right:0%;
+    }
+}
+@media (max-width: 800px)
+{
+	
+    .textblock1, .textblock2, .textblock3, .textblock4, .imageblock{
+	flex-direction: column;
+	margin: 100px;
+	
+	}
+    
+    ul
+      {
+        list-style: none;
+	gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+	
+       }
+     .list {
+	margin-left: 80px;
+	}
 
+     .img1{
+	margin-left: 130px;
+	}
+    .footerlayout{
+	margin: 100px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+}
 </style>
 </head>
 <body bgcolor="#edeef0">
@@ -285,14 +331,14 @@
 	
 	  <div class="infblock1">
 		
-		<p><div class="spanf">Very important information!</div></p>
-		<p><div class="spanf">Many, many very usefull and important information!</div></p>
+		<div class="spanf">Very important information!</div>
+		<div class="spanf">Many, many very usefull and important information!</div>
 	   </div>
 	
 
 	   <div class="infblock2">
-		<p><b>Some new header!</b></p>
-		<p><div class="spanf">For example, some new and usefull fixed text. And many another text and more text...</div></p>
+		<b>Some new header!</b>
+		<div class="spanf">For example, some new and usefull fixed text. And many another text and more text...</div>
 	   </div>
 	
 
